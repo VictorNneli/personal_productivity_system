@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;   /* pushes content to the right */
+  gap: 25px;
+  padding: 15px 20px;
+  background-color: #6cca14ff;
+}
+
+/* group links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* links style */
+.nav-links a {
+  text-decoration: none;      /* removes underline */
+  color: white;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  opacity: 0.85;
+}
+
+/* logout button */
+.logout-btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  opacity: 0.85;
+}
