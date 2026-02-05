@@ -4,25 +4,7 @@ export default function Dashboard() {
   return (
     <div className="min-h-screen flex">
 
-      {/* SIDEBAR */}
-      {/* <aside className="sidebar">
-        <div className="logo-box">
-          <div className="logo-icon">Rv</div>
-          <h1>System.</h1>
-        </div>
-
-        <nav className="nav">
-          <a className="nav-link active">Dashboard</a>
-          <a className="nav-link">Tasks</a>
-          <a className="nav-link">Profile</a>
-          <a className="nav-link">Settings</a>
-        </nav>
-
-        <div className="user-card">
-          <p className="user-name">Victor Nneli</p>
-         
-        </div>
-      </aside> */}
+      
 
 
       {/* MAIN */}

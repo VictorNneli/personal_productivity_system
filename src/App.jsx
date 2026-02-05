@@ -44,6 +44,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
          path="/profile"
          element={
          <ProtectedRoute isLoggedIn={isLoggedIn}>
+          <Profile setIsLoggedIn={setIsLoggedIn} />
          <Profile />
          </ProtectedRoute>
         }/>

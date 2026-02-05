@@ -1,9 +1,16 @@
 import React from 'react'
+import './settings.css';
 
-const settings = () => {
-  return (
-    <div>settings</div>
-  )
+
+function Settings() {
+ return(
+  <div className="headerContainer">
+    <div className="headerContent">
+    <h2>Settings</h2>
+    
+    </div>
+  </div>
+ )
 }
 
-export default settings
+export default Settings
