@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar {
+  background: #1e7f4f;
+  color: white;
+  padding: 14px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-left ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-left li {
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.nav-left li.active {
+  font-weight: bold;
+  opacity: 1;
+  border-bottom: 2px solid white;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+/* LAYOUT */
+
+.settings-container {
+  display: flex;
+  background: #f5f6f7;
+  min-height: calc(100vh - 60px);
+}
+
+/* SIDEBAR */
+
+/* SIDEBAR */
+
+.sidebar {
+  width: 70px;
+  background: white;
+  padding: 20px 10px;
+  border-right: 1px solid #e0e0e0;
+  transition: width 0.25s ease;
+  overflow: hidden;
+}
+
+.sidebar.open {
+  width: 240px;
+}
+
+.sidebar button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 8px;
+  border: none;
+  background: #f0f0f0;
+  cursor: pointer;
+  text-align: left;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+/* Hide text when collapsed */
+.sidebar.collapsed button {
+  text-indent: -999px;
+  position: relative;
+}
+
+/* Show text when open */
+.sidebar.open button {
+  text-indent: 0;
+}
+
+/* CONTENT */
+
+.content {
+  flex: 1;
+  padding: 30px;
+}
+
+.content h2 {
+  margin-bottom: 20px;
+}
+
+/* CARDS */
+
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card select {
+  padding: 6px;
+}
+
+.toggle {
+  justify-content: space-between;
+}
+
+/* BUTTONS */
+
+.connect-btn,
+.export-btn {
+  background: #1e7f4f;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.connect-btn:hover,
+.export-btn:hover {
+  background: #16633c;
+}
